@@ -1,0 +1,11 @@
+---
+layout: "layouts/base.html"
+pageId: home
+bannerTitle: "This is my homepage banner"
+bannerContent: "This my homepage banner content"
+---
+
+<section class="triptych">
+  {% for triptych in triptychs %} {% include "includes/card.html",
+  headline:triptych.headline, content:triptych.content %} {% endfor %}
+</section>
